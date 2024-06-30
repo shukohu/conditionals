@@ -68,16 +68,14 @@ public class Main {
             int one = 5;
             int two = 3;
             int three = 1;
-            if (one > two) {
-                System.out.println("то один больше двух");
-            } else if (two > three) {
-                System.out.println("то два больше трех");
-            } else if (three > two) {
-                System.out.println("то три больше двух");
-            }else if (two == one){
-                System.out.println("два равен одному");
-            }else if (one > two && one > three){
-                System.out.println("один больше двух и больше трех");
+            if (one > two && two > three) {
+                System.out.println("то один больше");
+            } else if (two > three && three < one) {
+                System.out.println("то два больше");
+            } else if (three > two && one < three) {
+                System.out.println("то три больше");
+            }else if (two == one) {
+                System.out.println("числа равны");
             }
         }
     }
